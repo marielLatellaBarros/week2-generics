@@ -10,10 +10,10 @@ public class TestWorkingPlace {
 		WorkingPlace<CircularSaw> otherWorkPlace = new WorkingPlace<>();
 		WorkingPlace<Motorized> motorizedWorkingPlace = new WorkingPlace<>();
 
-		WorkingPlaceUtility.getScore(carWorkingPlace);
-		WorkingPlaceUtility.getScore(bikeWorkingPlace);
+//		WorkingPlaceUtility.getScore(carWorkingPlace);
+//		WorkingPlaceUtility.getScore(bikeWorkingPlace);
 		WorkingPlaceUtility.getScore(vehicleWorkingPlace);
-		//WorkingPlaceUtility.getScore(otherWorkPlace);
-		//WorkingPlaceUtility.getScore(motorizedWorkingPlace);
+//		WorkingPlaceUtility.getScore(otherWorkPlace);
+//		WorkingPlaceUtility.getScore(motorizedWorkingPlace);
 	}
 }
