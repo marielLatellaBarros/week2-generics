@@ -3,13 +3,13 @@ package be.pxl.generics.opgave3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team {
+public class Team<T> {
     private String name;
     private int played;
     private int won;
     private int lost;
     private int tied;
-    List<Player> players = new ArrayList<>();
+    List<T> players = new ArrayList<>();
 
 
     public Team(String name) {
@@ -37,11 +37,11 @@ public class Team {
     }
 
     //TODO: Check how to get a list of something
-    public List<Player> getPlayers() {
+    public List<T> getPlayers() {
         return players;
     }
 
-    public void addPlayer(Player pyer) {
+    public void addPlayer(T pyer) {
         players.add(pyer);
     }
 
