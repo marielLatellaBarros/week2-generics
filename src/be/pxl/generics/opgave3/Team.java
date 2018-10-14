@@ -39,4 +39,12 @@ public class Team {
     public List<Player> getPlayers() {
         return players;
     }
+
+    public void addPlayer(Player pyer) {
+        players.add(pyer);
+    }
+
+    public int numberOfPlayers() {
+        return players.size();
+    }
 }
