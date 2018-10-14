@@ -36,6 +36,7 @@ public class Team {
         return tied;
     }
 
+    //TODO: Check how to get a list of something
     public List<Player> getPlayers() {
         return players;
     }
@@ -46,5 +47,11 @@ public class Team {
 
     public int numberOfPlayers() {
         return players.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Team{" +
+                "name='" + name;
     }
 }
