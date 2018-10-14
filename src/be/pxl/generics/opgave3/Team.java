@@ -57,17 +57,25 @@ public class Team<T extends Player> {
     }
 
 
-
-    public void matchResult(Team<T> oponent, int ourScore, int theirScore) {
+    public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
         this.played++;
-        this.won++;
-        this.lost++;
-        this.tied++;
+        opponent.played++;
 
-        oponent.played++;
-        oponent.won++;
-        oponent.lost++;
-        oponent.tied++;
+        if (ourScore > theirScore) {
+            this.won++;
+            opponent.lost++;
+        } else if (ourScore == theirScore) {
+            this.tied++;
+            opponent.tied++;
+        } else {
+            this.lost++;
+            opponent.won++;
+        }
+
+        //TODO: why is this code here?
+        if (opponent != null) {
+            opponent.matchResult(null, theirScore, ourScore);
+        }
     }
 
 
