@@ -9,7 +9,7 @@ public class Team<T> {
     private int won;
     private int lost;
     private int tied;
-    ArrayList<T> players = new ArrayList<>();
+    private ArrayList<T> players = new ArrayList<>();
 
 
     public Team(String name) {
@@ -58,6 +58,15 @@ public class Team<T> {
         oponent.won++;
         oponent.lost++;
         oponent.tied++;
+    }
+
+    public int ranking() {
+        int wonGames = this.won * 3;
+        int tiedGames = 0;
+        if (this.tied == 0) {
+            tiedGames = 1;
+        }
+        return wonGames + tiedGames;
     }
 
 }

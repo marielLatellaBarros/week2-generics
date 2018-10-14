@@ -12,6 +12,7 @@ public class TeamApp {
 
 //        soccerTeam.matchResult(new Team<VolleyballPlayer>("Las Leonas"), 5,0);
         soccerTeam.matchResult(new Team<>("Boca Juniors"), 5,0);
+        System.out.println(soccerTeam.ranking());
 
     }
 }
