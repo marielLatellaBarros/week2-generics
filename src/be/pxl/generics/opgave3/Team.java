@@ -35,17 +35,23 @@ public class Team<T extends Player> {
         return tied;
     }
 
-    public ArrayList<T> getPlayers() {
-        return players;
+    public int numberOfPlayers() {
+        return players.size();
+    }
+
+    public int ranking() {
+        return this.getWon() * 3 + this.getTied();
+    }
+
+    public Player getPlayers(int i) {
+        return players.get(i);
     }
 
     public void addPlayer(T player) {
         players.add(player);
     }
 
-    public int numberOfPlayers() {
-        return players.size();
-    }
+
 
     public void matchResult(Team<T> oponent, int ourScore, int theirScore) {
         this.played++;
@@ -59,13 +65,6 @@ public class Team<T extends Player> {
         oponent.tied++;
     }
 
-    public int ranking() {
-        int wonGames = this.won * 3;
-        int tiedGames = 0;
-        if (this.tied == 0) {
-            tiedGames = 1;
-        }
-        return wonGames + tiedGames;
-    }
+
 
 }
