@@ -10,9 +10,8 @@ public class TeamApp {
 
         System.out.println(soccerTeam.numberOfPlayers());
 
-        soccerTeam.matchResult(new Team("Las Leonas"), 5,0);
-        soccerTeam.matchResult(new Team("Boca Juniors"), 5,0);
-        soccerTeam.matchResult(new Team("Don Gato"), 5,0);
+//        soccerTeam.matchResult(new Team<VolleyballPlayer>("Las Leonas"), 5,0);
+        soccerTeam.matchResult(new Team<>("Boca Juniors"), 5,0);
 
     }
 }

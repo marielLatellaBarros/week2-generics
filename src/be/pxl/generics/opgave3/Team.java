@@ -48,7 +48,7 @@ public class Team<T> {
         return players.size();
     }
 
-    public void matchResult(Team oponent, int ourScore, int theirScore) {
+    public void matchResult(Team<T> oponent, int ourScore, int theirScore) {
         this.played++;
         this.won++;
         this.lost++;
