@@ -9,7 +9,7 @@ public class Team<T> {
     private int won;
     private int lost;
     private int tied;
-    List<T> players = new ArrayList<>();
+    ArrayList<T> players = new ArrayList<>();
 
 
     public Team(String name) {
@@ -36,13 +36,12 @@ public class Team<T> {
         return tied;
     }
 
-    //TODO: Check how to get a list of something
-    public List<T> getPlayers() {
+    public ArrayList<T> getPlayers() {
         return players;
     }
 
-    public void addPlayer(T pyer) {
-        players.add(pyer);
+    public void addPlayer(T player) {
+        players.add(player);
     }
 
     public int numberOfPlayers() {

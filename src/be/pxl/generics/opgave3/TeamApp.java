@@ -9,6 +9,5 @@ public class TeamApp {
 //        soccerTeam.addPlayer(new BaseballPlayer("Ginnobili"));
 
         System.out.println(soccerTeam.numberOfPlayers());
-        System.out.println(soccerTeam.getPlayers());
     }
 }
