@@ -48,7 +48,12 @@ public class Team<T extends Player> {
     }
 
     public void addPlayer(T player) {
-        players.add(player);
+        if (players.contains(player)) {
+            System.out.println(player.getName() + " is already on this team!");
+            return;
+        }
+            players.add(player);
+            System.out.println(player.getName() + " picked for team " + this.getName());
     }
 
 
