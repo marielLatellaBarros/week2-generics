@@ -1,9 +1,8 @@
 package be.pxl.generics.opgave3;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Team<T> {
+public class Team<T extends Player> {
     private String name;
     private int played;
     private int won;
