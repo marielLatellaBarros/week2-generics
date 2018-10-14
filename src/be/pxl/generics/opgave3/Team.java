@@ -48,9 +48,16 @@ public class Team<T> {
         return players.size();
     }
 
-    @Override
-    public String toString() {
-        return "Team{" +
-                "name='" + name;
+    public void matchResult(Team oponent, int ourScore, int theirScore) {
+        this.played++;
+        this.won++;
+        this.lost++;
+        this.tied++;
+
+        oponent.played++;
+        oponent.won++;
+        oponent.lost++;
+        oponent.tied++;
     }
+
 }
