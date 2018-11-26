@@ -1,11 +1,11 @@
 package ExamplesBook.opdracht01;
 
-public class DuoMix<T1, T2, T3> {
+public class Family<T1, T2, T3> {
     private T1 firstElement;
     private T2 secondElement;
     private T3 thirdElement;
 
-    public DuoMix(T1 firstElement, T2 secondElement, T3 thirdElement) {
+    public Family(T1 firstElement, T2 secondElement, T3 thirdElement) {
         this.firstElement = firstElement;
         this.secondElement = secondElement;
         this.thirdElement = thirdElement;
@@ -37,6 +37,9 @@ public class DuoMix<T1, T2, T3> {
 
     @Override
     public String toString() {
-        return  firstElement + " and " + secondElement + " together for " + thirdElement + " years!";
+        return  this.thirdElement +
+                " is the product of the love between " +
+                this.firstElement + " and " +
+                this.secondElement;
     }
 }
